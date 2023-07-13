@@ -16,7 +16,7 @@
     "paths": {
       "@": ["app"],
       "@/*": ["app/*"],
-      "@public/*": ["public/*"]
+      "@public/*": ["public/*"],
     }
   },
   "include": ["remix.env.d.ts", "**/*.ts", "**/*.tsx"]
