@@ -1,11 +1,11 @@
-import adam from '@public/images/adam.jpeg'
-import { LiveReload } from '@remix-run/react'
-import matt from '../../app/images/matt.jpeg'
-import molly from '../../app/images/molly.jpeg'
-import gitimg from '../../app/images/sociallogos/github-mark.png'
-import linkimg from '../../app/images/sociallogos/linkedincropped.png'
-import tim from '../../app/images/tim.jpeg'
-import victoria from '../../app/images/victoria.jpeg'
+import adam from '@public/images/adam.jpeg';
+import { LiveReload } from '@remix-run/react';
+import matt from '../../app/images/matt.jpeg';
+import molly from '../../app/images/molly.jpeg';
+import gitimg from '../../app/images/sociallogos/github-mark.png';
+import linkimg from '../../app/images/sociallogos/linkedincropped.png';
+import tim from '../../app/images/tim.jpeg';
+import victoria from '../../app/images/victoria.jpeg';
 
 export function Team(props) {
   return (
