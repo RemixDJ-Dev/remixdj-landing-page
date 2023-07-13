@@ -3,11 +3,11 @@ import {
   Links,
   LiveReload,
   Meta,
-  Scripts,
-  ScrollRestoration
+  Outlet,
+  ScrollRestoration,
 } from "@remix-run/react";
 
-import stylesheet from './styles/tailwind.css';
+import stylesheet from './global-styles.css';
 
 export const links: LinksFunction = () => {
   return [
@@ -25,7 +25,9 @@ export default function Root() {
         <link rel="icon" type="image/ico" href="/favicon.ico" />
       </head>
       <body className='bg-black text-white'>
-
+        <Outlet />
+        <ScrollRestoration />
+        <LiveReload />
       </body>
     </html >
   );
