@@ -1,12 +1,11 @@
-import React from 'react'
+import adam from '@public/images/adam.jpeg'
 import { LiveReload } from '@remix-run/react'
-import gitimg from '../images/sociallogos/github-mark.png'
-import linkimg from '../images/sociallogos/linkedincropped.png'
-import adam from '../images/adam.jpeg'
-import matt from '../images/matt.jpeg'
-import molly from '../images/molly.jpeg'
-import tim from '../images/tim.jpeg'
-import victoria from '../images/victoria.jpeg'
+import matt from '../../app/images/matt.jpeg'
+import molly from '../../app/images/molly.jpeg'
+import gitimg from '../../app/images/sociallogos/github-mark.png'
+import linkimg from '../../app/images/sociallogos/linkedincropped.png'
+import tim from '../../app/images/tim.jpeg'
+import victoria from '../../app/images/victoria.jpeg'
 
 export function Team(props) {
   return (
@@ -19,7 +18,7 @@ export function Team(props) {
           </div>
           <p className='text-base sm:text-base md:text-base lg:text-lg xl:text-xl 2xl:text-2xl'>Adam Liang</p>
           <div className='group grid grid-cols-3 gap-0 justify-items-center'>
-            <a href="https://github.com/adamsherpa" target="_blank"><img className='grayscale max-h-8 mt-1' src={gitimg} /></a>
+            <a href="https://github.com/adambytes" target="_blank"><img className='grayscale max-h-8 mt-1' src={gitimg} /></a>
             <div className='mt-2 p-2 invisible group-hover:visible'><p>👨‍🔧</p></div>
             <a href='https://www.linkedin.com/in/adamvliang/' target="_blank"><img className='grayscale max-h-8 mt-1' src={linkimg} /></a>
           </div>

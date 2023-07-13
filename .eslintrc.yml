@@ -1,0 +1,73 @@
+parser: "@typescript-eslint/parser"
+env:
+  browser: true
+  es6: true
+  node: true
+extends:
+  - eslint:recommended
+  - "plugin:@typescript-eslint/recommended"
+  - "plugin:react/recommended"
+  - plugin:react-hooks/recommended
+  - "prettier/@typescript-eslint"
+  - "plugin:prettier/recommended"
+plugins:
+  - react
+  - "@typescript-eslint"
+  - jsx-a11y
+  - vitest
+parserOptions:
+  ecmaVersion: 2020
+  sourceType: "module"
+  ecmaFeatures:
+    jsx: true
+rules:
+  react/react-in-jsx-scope: off
+  react/prop-types: off
+  jsx-a11y/anchor-is-valid:
+    - error
+    - components:
+        - Link
+      specialLink:
+        - hrefLeft
+        - hrefRight
+      aspects:
+        - invalidHref
+        - preferButton
+  no-console: warn
+  no-debugger: warn
+  no-alert: error
+  no-unused-vars: warn
+  prefer-const: warn
+  eqeqeq: error
+  no-eval: error
+  no-implied-eval: error
+  no-eq-null: error
+  no-global-assign: error
+  no-new-wrappers: error
+  no-return-assign: error
+  no-self-compare: error
+  no-unused-expressions: error
+  no-useless-call: error
+  no-useless-concat: error
+  no-useless-escape: error
+  no-useless-return: error
+  no-var: error
+  prefer-arrow-callback: warn
+  prefer-numeric-literals: warn
+  prefer-rest-params: warn
+  prefer-spread: warn
+  prefer-template: warn
+  no-use-before-define:
+    - error
+    - functions: false
+      classes: true
+settings:
+  react:
+    version: "detect"
+overrides:
+  - files:
+      - "**/*.js"
+      - "**/*.jsx"
+    parser: "@babel/eslint-parser"
+    plugins:
+      - react

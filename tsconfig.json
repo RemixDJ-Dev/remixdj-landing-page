@@ -12,7 +12,12 @@
     "noEmit": true,
     "resolveJsonModule": true,
     "moduleResolution": "node",
-    "noImplicitAny": true
+    "noImplicitAny": true,
+    "paths": {
+      "@": ["app"],
+      "@/*": ["app/*"],
+      "@public/*": ["public/*"]
+    }
   },
-  "include": ["remix.env.d.ts", "**/*.ts", "**/*.tsx", "app/routes/tutorial.tsx"]
+  "include": ["remix.env.d.ts", "**/*.ts", "**/*.tsx"]
 }
